@@ -8,6 +8,8 @@ const wss = new WebSocketServer({ server });
 
 const clients = new Map();
 
+console.log('hello world');
+
 wss.on("connection", (ws) => {
   let clientId = null;
   let role = null;
